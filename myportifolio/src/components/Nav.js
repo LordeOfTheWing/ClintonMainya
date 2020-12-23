@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 //Importing styles
 import styled from 'styled-components';
@@ -6,16 +8,26 @@ import styled from 'styled-components';
 const Nav = () => {
     return(
         <StyledNav>
-            <h1><a id="logo" href="#">Clinton Mainya</a></h1>
+            <h1>
+                <Link id="logo" to="/" >
+                    Clinton Mainya
+                </Link>
+            </h1>
             <ul>
                 <li>
-                    <a href="#">1. About Me</a>
+                    <Link to="/">
+                        1. About Me
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">2. My Work</a>
+                    <Link to="/work">
+                        2. My Work
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">3. Contact Me</a>
+                    <Link to="/contact">
+                        3. Contact Me
+                    </Link>
                 </li>
             </ul>
         </StyledNav>

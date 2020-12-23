@@ -16,19 +16,19 @@ function App() {
     <div className="App">
         <GlobalStyle/>
         <Nav />
-
-        <Route path="/">
+      <Switch>
+        <Route path="/" exact>
           <AboutMe/>
         </Route>
 
-        <Route path="/mywork">
+        <Route path="/work">
           <MyWork/>
         </Route>
 
-        <Route path="/contactme">
+        <Route path="/contact">
           <ContactMe/>
         </Route>
-        
+      </Switch>
     </div>
   );
 }

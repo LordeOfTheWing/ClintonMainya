@@ -8,7 +8,7 @@ import money from '../img/money.svg'
 import teamwork from '../img/teamwork.svg'
 
 //import images
-import home2 from '../img/home2.png'
+import apple from '../img/apple.png'
 
 //Import Styles
 import {About, Description, Image} from '../Styles';
@@ -51,7 +51,7 @@ const ServicesSection = ()=>{
                     </Cards>
             </Description>
             <Image>
-                <img src={home2} alt=""/>
+                <img src={apple} alt=""/>
             </Image>
         </Services>
     )
