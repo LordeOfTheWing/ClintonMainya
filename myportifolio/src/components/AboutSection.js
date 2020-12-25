@@ -1,27 +1,32 @@
 import React from 'react';
 import hacker from '../img/hacker.png';
 //Styled components
-import styled from 'styled-components';
-import {About, Description, Image, Hide} from '../Styles';
+import {About, Description, Hide} from '../Styles';
+
+//Framer motion
+
+import {motion} from 'framer-motion';
 
 
 const AboutSection = () => {
     return(
         <About>
             <Description>
-                    <div className="title">
+                    <motion.div className="title">
                         <Hide>
-                            <h2>I Work to make</h2>
+                            <motion.h2>
+                            I Work to make
+                            </motion.h2>
                         </Hide>
                                 <Hide>
-                            <h2>
+                            <motion.h2 >
                                 my <span>dreams</span> come
-                            </h2>
+                            </motion.h2>
                         </Hide>
                         <Hide>
-                            <h2>true.</h2>
+                            <motion.h2 >true.</motion.h2>
                         </Hide>
-                        </div>
+                        </motion.div>
                         <p>Contact me for any designing or coding jobs that you may have.
                         I am a professional with amazing skills.
                         </p>

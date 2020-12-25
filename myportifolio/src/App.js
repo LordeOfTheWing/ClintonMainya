@@ -9,15 +9,21 @@ import ContactMe from '../src/pages/ContactMe';
 import MyWork from '../src/pages/MyWork';
 import ProjectDetail from './pages/ProjectDetail';
 //Router
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, useLocation} from 'react-router-dom';
+//Animation
+import {AnimatePresence} from 'framer-motion';
 
 
 function App() {
+
+  const location = useLocation();
+  
   return (
     <div className="App">
         <GlobalStyle/>
         <Nav />
-      <Switch>
+        <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.path}>
         <Route path="/" exact>
           <AboutMe/>
         </Route>
@@ -32,6 +38,7 @@ function App() {
           <ContactMe/>
         </Route>
       </Switch>
+      </AnimatePresence>
     </div>
   );
 }
