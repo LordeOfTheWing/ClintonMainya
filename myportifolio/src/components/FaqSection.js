@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {About} from '../Styles';
+import Toggle from './Toggle';
+import {AnimateSharedLayout} from 'framer-motion';
 
 
 
@@ -9,39 +11,34 @@ const FaqSection = () => {
     return(
         <Faq>
             <h2>Any Questions ?<span>FAQ</span></h2>
-            <div className="question">
-                <h4>What do you specifically do?</h4>
+            <AnimateSharedLayout>
+            <Toggle title='What do you specifically do?'>
                 <div className="answer">
                     <p>I am a web developer and also a graphic designer</p>
+                    <p>I just love designing</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>What are the languages and frameworks you code in?</h4>
+            </Toggle>
+            <Toggle title='What are the languages and frameworks you code in?'>            
                 <div className="answer">
                     <p>I am a JavaScript developer.</p>
                     <p>
-                        I love using React for creation of beautiful front-ends like this one.
+                        I love using React for creation of beautiful front-ends. like this one.
                     </p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Are you good with back-end?</h4>
+            </Toggle>
+            <Toggle title='Are you good with back-end?'>
                 <div className="answer">
                     <p>My dream goal is to be full-stack developer</p>
                     <p>At the moment, I am starting to learn about node js and Express js</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Do you love what you do?</h4>
+            </Toggle>
+            <Toggle title='Do you love what you do?'>
                 <div className="answer">
                     <p>Absolutely yes.</p>
                     <p>I love coming up with solutions and solving complex problems.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
+            </AnimateSharedLayout>
         </Faq>
     )
 };
