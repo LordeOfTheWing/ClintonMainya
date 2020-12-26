@@ -10,6 +10,7 @@ const ContactMe = ()=> {
         initial="hidden" 
         animate="show"
         exit="exit"
+        style={{background:'#fff'}}
         >
             <h1>Contact Me</h1>
         </motion.div>

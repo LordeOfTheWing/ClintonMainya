@@ -11,7 +11,8 @@ import {pageAnimation} from '../animation';
 
 const AboutUs = () => {
     return(
-    <motion.div exit="exit" 
+    <motion.div 
+    exit="exit" 
     variants={pageAnimation} 
     initial="hidden" 
     animate="show"

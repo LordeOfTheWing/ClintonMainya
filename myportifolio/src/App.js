@@ -23,7 +23,7 @@ function App() {
         <GlobalStyle/>
         <Nav />
         <AnimatePresence exitBeforeEnter>
-      <Switch location={location} key={location.path}>
+      <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
           <AboutMe/>
         </Route>

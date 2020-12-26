@@ -1,40 +1,49 @@
 import React from 'react';
-import hacker from '../img/hacker.png';
+import hacker  from '../img/hacker.png';
+import home1  from '../img/home1.png';
 //Styled components
 import {About, Description, Hide} from '../Styles';
 
 //Framer motion
 
 import {motion} from 'framer-motion';
+import {titleAnim, fade,photoAnim} from '../animation';
 
-
+import Wave from './Wave';
 const AboutSection = () => {
     return(
         <About>
             <Description>
                     <motion.div className="title">
                         <Hide>
-                            <motion.h2>
+                            <motion.h2 
+                            variants= {titleAnim}
+                            >
                             I Work to make
                             </motion.h2>
                         </Hide>
                                 <Hide>
-                            <motion.h2 >
+                            <motion.h2 
+                            variants= {titleAnim}
+                            >
                                 my <span>dreams</span> come
                             </motion.h2>
                         </Hide>
                         <Hide>
-                            <motion.h2 >true.</motion.h2>
+                            <motion.h2 
+                            variants= {titleAnim}
+                            >true.</motion.h2>
                         </Hide>
                         </motion.div>
-                        <p>Contact me for any designing or coding jobs that you may have.
+                        <motion.p variants={fade}>Contact me for any designing or coding jobs that you may have.
                         I am a professional with amazing skills.
-                        </p>
-                        <button>Contact Me</button>
+                        </motion.p>
+                        <motion.button variants={fade}>Contact Me</motion.button>
             </Description>
                             <image>
-                                <img src={hacker} alt="me pic."/>
-                            </image>        
+                                <motion.img  variants={photoAnim} src={home1} alt="me pic."/>
+                            </image>   
+            <Wave/>
         </About>
     );
 };
