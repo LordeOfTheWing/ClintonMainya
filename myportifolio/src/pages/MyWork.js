@@ -27,7 +27,7 @@ const MyWork = ()=> {
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
-         </motion.div>
+        </motion.div>
             <Movie>
                 <motion.h2 variants={fade}>React-Music-Player</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>

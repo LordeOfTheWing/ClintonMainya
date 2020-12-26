@@ -13,10 +13,15 @@ import apple from '../img/apple.png'
 //Import Styles
 import {About, Description, Image} from '../Styles';
 
+//Scroll Animation
+import {useScroll} from './useScroll';
+import {scrollReveal} from '../animation';
 
 const ServicesSection = ()=>{
+    const [element, controls] = useScroll();
+
     return(
-        <Services>
+        <Services variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
             <Description>
                 <h2>High <span>quality </span> services</h2>
                     <Cards>
