@@ -15,9 +15,9 @@ export const ProjectState = () => {
       url: "/work/react-music-player",
       projectdetail: [
         {
-          title: "React--Javascript--Html--Css ",
+          title: "What it's made of:",
           description:
-            "A simple music player with a very nice UI. Click below to view the GitHub repo.",
+            "A simple music player with a very nice UI.Made with React,Javascript,Html and CSS . Click below to view the GitHub repo.",
             link: 'https://github.com/LordeOfTheWing/react-music-player',
         }
       ],
@@ -29,9 +29,9 @@ export const ProjectState = () => {
       secondaryImg: goodtimes2,
       projectdetail: [
         {
-          title: "Javascript--Html--Css",
+          title: "What it's made of:",
           description:
-            "A very modern Calculator with a nice looking UI.Click link below to view the Github repo",
+            "A very modern Calculator with a nice looking UI.Made with Javascript,Html and CSS.Click link below to view the Github repo",
             link: 'https://github.com/LordeOfTheWing/Javascript-Calculator',
         }
       ],

@@ -12,6 +12,7 @@ import {pageAnimation} from '../animation';
 const ProjectDetail = ()=> {
     const history = useHistory();
     const url = history.location.pathname;
+    //eslint-disable-next-line
     const [projects, setProjects] = useState(ProjectState);
     const [project, setProject] = useState(null);
 
@@ -81,6 +82,10 @@ const ProjectDetails = styled.div`
     margin: 5rem 10rem;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 1300px){
+     display:block;
+     margin:2re 2rem;
+    }
 
 `;
 

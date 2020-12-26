@@ -1,5 +1,4 @@
 import React from 'react';
-import hacker  from '../img/hacker.png';
 import home1  from '../img/home1.png';
 //Styled components
 import {About, Description, Hide} from '../Styles';
@@ -10,6 +9,7 @@ import {motion} from 'framer-motion';
 import {titleAnim, fade,photoAnim} from '../animation';
 
 import Wave from './Wave';
+import { Link, Route } from 'react-router-dom';
 const AboutSection = () => {
     return(
         <About>
@@ -38,7 +38,11 @@ const AboutSection = () => {
                         <motion.p variants={fade}>Contact me for any designing or coding jobs that you may have.
                         I am a professional with amazing skills.
                         </motion.p>
+                        <Route>
+                        <Link to="/contact">
                         <motion.button variants={fade}>Contact Me</motion.button>
+                        </Link>
+                        </Route>
             </Description>
                             <image>
                                 <motion.img  variants={photoAnim} src={home1} alt="me pic."/>
