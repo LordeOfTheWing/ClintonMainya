@@ -5,9 +5,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 //Importing Images
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+import wm1 from '../img/wm1.png';
+import mci1 from '../img/mc1.png';
+import bmi1 from '../img/bmi1.png';
 //Animations
 import {motion} from 'framer-motion';
 import {sliderContainer ,slider,pageAnimation,fade, photoAnim ,lineAnim} from '../animation';
@@ -37,23 +37,24 @@ const MyWork = ()=> {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/react-music-player">
                 <Hide>
-                        <motion.img variants={photoAnim} src={athlete} alt=""/>
+    
+                        <motion.img variants={photoAnim} src={wm1} alt=""/>
                 </Hide>
                 </Link>
                 <ScrollTop/>
             </Movie>
             <Movie>
-                <h2>Vanilla-Javascript-Calculator</h2>
+                <h2>Javascript-BMI-Calculator</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/js-bmi-calculator">
-                    <img src={theracer} alt=""/>
+                    <img src={bmi1} alt=""/>
                 </Link>
             </Movie>
             <Movie >
-                <h2>Javascript-BMI-Calculator</h2>
+                <h2>Vanilla-Javascript-Calculator</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/vanilla-js-calculator">
-                    <img src={goodtimes} alt=""/>
+                    <img src={mci1} alt=""/>
                 </Link>
             </Movie>
             <ScrollTop/>
@@ -84,10 +85,10 @@ const Movie = styled(motion.div)`
     }
     img{
         width: 100%;
-        height: 70vh;
         object-fit: cover;
+        height: 50%;
+        padding: 7rem;
     }
-
 `;
 
 const Hide = styled.div`

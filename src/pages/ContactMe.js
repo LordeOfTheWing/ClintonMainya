@@ -2,8 +2,7 @@ import React from 'react'
 //Animations
 import {motion} from 'framer-motion';
 import {pageAnimation ,titleAnim} from '../animation';
-import styled from 'styled-components';
-
+import styled from 'styled-components'; 
 
 const ContactMe = ()=> {
     return (
@@ -12,7 +11,7 @@ const ContactMe = ()=> {
         initial="hidden" 
         animate="show"
         exit="exit"
-        style={{background:'#fff'}}
+        style={{background:'#131111'}}
         >
             <Title>
                 <Hide>
@@ -22,13 +21,13 @@ const ContactMe = ()=> {
             <div>
             <Hide>
                 <Social variants={titleAnim}>
-                <Line/>
+            <Line/>
                 <h2>Send Me A Message- 0728413510 , 0778323526</h2>
                 </Social> 
             </Hide> 
             <Hide> 
                 <Social variants={titleAnim}>
-                <Line/>
+            <Line/>
                 <h2>Send Me an E-mail- clintonmainya@gmail.com</h2>
                 </Social>
             </Hide>              
@@ -40,7 +39,7 @@ const ContactMe = ()=> {
 
 const ContactStyle = styled(motion.div)`
     padding: 5rem 10rem;
-    color:black;
+    color:white;
     min-height: 90vh;
     @media (max-width: 1300px){
      
@@ -51,7 +50,7 @@ const ContactStyle = styled(motion.div)`
 
 const Title = styled.div`
     margin-bottom: 4rem;
-    color: black;
+    color:white;
     @media (max-width: 1300px){
     margin-top: 5rem;
     }
@@ -80,6 +79,7 @@ const Line = styled(motion.div)`
     height: 0.3rem;
     background: #23d997;
     width:100%;
+    margin: 5rem;
 
     @media(max-width: 1300px){
         left: 0%;

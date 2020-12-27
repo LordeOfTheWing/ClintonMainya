@@ -1,52 +1,52 @@
 //Import Images
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import wm1 from "./img/wm1.png";
+import wm2 from "./img/wm2.png";
+import mc2 from "./img/mc2.png";
+import bmi2 from "./img/bmi2.png";
+import mc3 from "./img/mc3.png";
+import bmi3 from "./img/bmi3.png";
 
 export const ProjectState = () => {
   return [
     {
       title: "React-Music-Player",
-      mainImg: athlete,
-      secondaryImg: athlete2,
+      mainImg: wm1,
+      secondaryImg: wm2,
       url: "/work/react-music-player",
       projectdetail: [
         {
           title: "What it's made of:",
           description:
-            "A simple music player with a very nice UI.Made with React,Javascript,Html and CSS . Click below to view the GitHub repo.",
-            link: 'https://github.com/LordeOfTheWing/react-music-player',
+            "A simple music player with a very nice UI.Made with React,Javascript,Html and CSS . Click The Link Below To Launch The App.",
+            link: 'https://wavesmusic.netlify.app/',
         }
       ],
     },
     {
       title: "Vanilla-Javascript-Calculator",
-      mainImg: goodtimes,
+      mainImg: mc2,
       url: "/work/vanilla-js-calculator",
-      secondaryImg: goodtimes2,
+      secondaryImg: mc3,
       projectdetail: [
         {
           title: "What it's made of:",
           description:
-            "A very modern Calculator with a nice looking UI.Made with Javascript,Html and CSS.Click link below to view the Github repo",
-            link: 'https://github.com/LordeOfTheWing/Javascript-Calculator',
+            "A very modern Calculator with a nice looking UI.Made with Javascript,Html and CSS.Click link below to launch the App",
+            link: 'https://modernjscalculator.netlify.app/',
         }
       ],
     },
     {
       title: "Javascript-BMI-Calculator",
-      mainImg: theracer,
+      mainImg: bmi2.png,
       url: "/work/js-bmi-calculator",
-      secondaryImg: theracer2,
+      secondaryImg: bmi3.png,
       projectdetail: [
         {
           title: "What its made of:",
           description:
-            `A Basic BMI calculator. Made up using vanilla javascript, html and css. Click the link below to view :)`,
-          link: 'https://github.com/LordeOfTheWing/BMI-Calculator',
+            `A Basic BMI calculator. Made up using vanilla javascript, html and css. Click the link below to view launch the app`,
+          link: 'https://bmicalculatorjs.netlify.app/',
         }
       ],
     },
