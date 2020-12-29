@@ -5,6 +5,8 @@ import mc2 from "./img/mc2.png";
 import bmi2 from "./img/bmi2.png";
 import mc3 from "./img/mc3.png";
 import bmi3 from "./img/bmi3.png";
+import weather from '../src/img/weather.png';
+
 
 export const ProjectState = () => {
   return [
@@ -47,6 +49,20 @@ export const ProjectState = () => {
           description:
             `A Basic BMI calculator. Made up using vanilla javascript, html and css. Click the link below to view launch the app`,
           link: 'https://bmicalculatorjs.netlify.app/',
+        }
+      ],
+    },
+    {
+      title: "React-Weather-App",
+      mainImg: weather.png,
+      url: "/work/react-weather-app",
+      secondaryImg: bmi3.png,
+      projectdetail: [
+        {
+          title: "What its made of:",
+          description:
+            `A Weather app. Made up using React and implements the API Fetching. Click the link below to view launch the app`,
+          link: 'https://weatherappclint.netlify.app/',
         }
       ],
     },

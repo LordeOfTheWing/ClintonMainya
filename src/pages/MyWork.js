@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import wm1 from '../img/wm1.png';
 import mci1 from '../img/mc1.png';
 import bmi1 from '../img/bmi1.png';
+import weather from '../img/weather.png';
 //Animations
 import {motion} from 'framer-motion';
 import {sliderContainer ,slider,pageAnimation,fade, photoAnim ,lineAnim} from '../animation';
@@ -24,7 +25,7 @@ const MyWork = ()=> {
         initial="hidden" 
         animate="show"
         exit="exit"
-        style={{background:'#fff'}}
+        style={{background:'#000'}}
         >
         <motion.div variants={sliderContainer}>       
         <Frame1 variants={slider}></Frame1>
@@ -42,19 +43,26 @@ const MyWork = ()=> {
                 </Hide>
                 </Link>
                 <ScrollTop/>
-            </Movie>
-            <Movie>
-                <h2>Javascript-BMI-Calculator</h2>
+            </Movie>         
+            <Movie >
+                <h2>React-Weather-App</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link to="/work/js-bmi-calculator">
-                    <img src={bmi1} alt=""/>
+                <Link to="/work/react-weather-app">
+                    <img src={weather} alt=""/>
                 </Link>
             </Movie>
-            <Movie >
+             <Movie >
                 <h2>Vanilla-Javascript-Calculator</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/vanilla-js-calculator">
                     <img src={mci1} alt=""/>
+                </Link>
+            </Movie>
+               <Movie>
+                <h2>Javascript-BMI-Calculator</h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to="/work/js-bmi-calculator">
+                    <img src={bmi1} alt=""/>
                 </Link>
             </Movie>
             <ScrollTop/>
@@ -67,6 +75,8 @@ const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
+    background:black;
+    color:white;
     h2{
         padding: 1rem 0rem;
 
@@ -78,6 +88,7 @@ const Work = styled(motion.div)`
 `;
 const Movie = styled(motion.div)`
     padding-bottom: 10rem;
+
     .line{
         height: 0.5rem;
         background: #23d997;
