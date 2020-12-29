@@ -40,9 +40,9 @@ export const Image = styled.div`
     }
     @media (max-width: 1300px){
     img{
-        height:40vh;
-        scale:0.6;
-        margin-top:10px;
+        height:50vh;
+        scale:0.7;
+        margin-top: 5px;
     }
 }
 `;

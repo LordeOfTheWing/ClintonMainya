@@ -1,7 +1,7 @@
 import React from 'react';
-import hacker  from '../img/hacker.png';
+import clinton from '../img/clinton.jpg';
 //Styled components
-import {About, Description, Hide} from '../Styles';
+import {About, Description, Hide, Image} from '../Styles';
 
 //Framer motion
 
@@ -44,9 +44,9 @@ const AboutSection = () => {
                         </Link>
                         </Route>
             </Description>
-                            <image>
-                                <motion.img  variants={photoAnim} src={hacker} alt="me pic."/>
-                            </image>   
+                            <Image>
+                                <motion.img  variants={photoAnim} src={clinton} alt="me pic."/>
+                            </Image>   
             <Wave/>
         </About>
     );
