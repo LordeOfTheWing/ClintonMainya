@@ -45,9 +45,6 @@ const ProjectDetail = ()=> {
                     key={projectdetail.title}/>
                 ))};
             </ProjectDetails>
-            <ImageDisplay>
-                    <img src={project.secondaryImg} alt=""/>
-            </ImageDisplay>
         </Details>
         )}        
         </>
@@ -60,7 +57,7 @@ const Details =styled(motion.div)`
     `;
 const Headline =styled.div`
     min-height: 90vh;
-    padding-top: 20vh;
+    padding-top: 5vh;
     position: relative;
     h2{
         position: relative;
@@ -84,7 +81,7 @@ const ProjectDetails = styled.div`
     justify-content: space-around;
     @media (max-width: 1300px){
      display:block;
-     margin:2re 2rem;
+     margin:2rem 2rem;
     }
 
 `;

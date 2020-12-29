@@ -28,7 +28,7 @@ export const ProjectState = () => {
       title: "Vanilla-Javascript-Calculator",
       mainImg: mc2,
       url: "/work/vanilla-js-calculator",
-      secondaryImg: mc3,
+      secondaryImg: mc2,
       projectdetail: [
         {
           title: "What it's made of:",
@@ -40,9 +40,9 @@ export const ProjectState = () => {
     },
     {
       title: "Javascript-BMI-Calculator",
-      mainImg: bmi2.png,
+      mainImg: bmi2,
       url: "/work/js-bmi-calculator",
-      secondaryImg: bmi3.png,
+      secondaryImg: bmi3,
       projectdetail: [
         {
           title: "What its made of:",
@@ -54,9 +54,9 @@ export const ProjectState = () => {
     },
     {
       title: "React-Weather-App",
-      mainImg: weather.png,
+      mainImg: weather,
       url: "/work/react-weather-app",
-      secondaryImg: bmi3.png,
+      secondaryImg: bmi3,
       projectdetail: [
         {
           title: "What its made of:",
