@@ -17,22 +17,23 @@ const FaqSection = () => {
             <AnimateSharedLayout>
             <Toggle title='What do you specifically do?'>
                 <div className="answer">
-                    <p>I am a web developer and also a graphic designer</p>
-                    <p>I just love designing</p>
+                    <p>I am a frontend developer and also a graphic designer</p>
+                    <p>I just love designing and coming up with beautiful web applications.</p>
                 </div>
             </Toggle>
             <Toggle title='What are the languages and frameworks you code in?'>            
                 <div className="answer">
-                    <p>I am a JavaScript developer.</p>
+                    <p>I'm in love with JavaScript.</p>
+                    <p>Although I'm very flexible I am willing to  learn any new programming languages</p>
                     <p>
-                        I love using React for creation of beautiful front-ends. like this one.
+                        I love using React for creation of beautiful front-ends. like this one.;
                     </p>
                 </div>
             </Toggle>
             <Toggle title='Are you good with back-end?'>
                 <div className="answer">
                     <p>My dream goal is to be full-stack developer</p>
-                    <p>At the moment, I am starting to learn about node js and Express js</p>
+                    <p>At the moment, I am starting to learn about Node js and Express js but I'm good at Firebase.</p>
                 </div>
             </Toggle>
             <Toggle title='Do you love what you do?'>

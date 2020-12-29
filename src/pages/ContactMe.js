@@ -64,6 +64,7 @@ const Social = styled(motion.div)`
     align-items: center;
     h2{
         margin: 2rem;
+        font-size:2.5rem;
     }
     @media (max-width: 1300px){
     display:flex;

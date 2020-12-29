@@ -37,14 +37,14 @@ const ServicesSection = ()=>{
                                 <img src={teamwork} alt=""/>
                                 <h3>Teamwork</h3>
                             </div>
-                                <p>Lorem ipsum</p>
+                                <p>I Can Work Easily With Other People on Larger Projects </p>
                         </Card>
                         <Card>
                             <div className="icon">
                                 <img src={diaphragm} alt=""/>
-                                <h3>Diaphragm</h3>
+                                <h3>Capture</h3>
                             </div>
-                                <p>Lorem ipsum</p>
+                                <p>Eye-catching designs.</p>
                         </Card>
                         <Card>
                             <div className="icon">
@@ -70,7 +70,6 @@ const Services = styled(About)`
         width: 70%;
         padding: 2rem 0rem 4rem 0rem;
     }
-    
 `;
 const Cards = styled.div`
     display: flex;
