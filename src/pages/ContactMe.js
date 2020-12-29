@@ -3,6 +3,7 @@ import React from 'react'
 import {motion} from 'framer-motion';
 import {pageAnimation ,titleAnim} from '../animation';
 import styled from 'styled-components'; 
+import github2 from '../img/github2.png';
 
 const ContactMe = ()=> {
     return (
@@ -30,7 +31,13 @@ const ContactMe = ()=> {
             <Line/>
                 <h2>Send Me an E-mail- clintonmainya@gmail.com</h2>
                 </Social>
-            </Hide>              
+            </Hide>
+            <Hide> 
+                <Social variants={titleAnim}>
+            <Line/><h2>Github:</h2>
+              <a href="https://github.com/LordeOfTheWing"><img style={{height: "20vh"}} src= {github2} alt=""/></a> 
+                </Social>
+            </Hide>            
             </div>
         </ContactStyle>
     )
@@ -41,10 +48,9 @@ const ContactStyle = styled(motion.div)`
     padding: 5rem 10rem;
     color:white;
     min-height: 90vh;
-    @media (max-width: 1300px){
-     
-     padding: 2rem;
-     font-size: 1rem;
+    @media (max-width: 1300px){     
+        padding: 2rem 2rem;
+        font-size: 1rem;
     }
 `;
 
@@ -86,5 +92,4 @@ const Line = styled(motion.div)`
         left: 0%;
     }
 `;
-
 export default ContactMe;
