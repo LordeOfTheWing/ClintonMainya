@@ -6,6 +6,8 @@ import bmi2 from "./img/bmi2.png";
 import mc3 from "./img/mc3.png";
 import bmi3 from "./img/bmi3.png";
 import weather from '../src/img/weather.png';
+import ignite2 from '../src/img/ignite2.png';
+import ignite from '../src/img/ignite.png'
 
 
 export const ProjectState = () => {
@@ -25,20 +27,36 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "Vanilla-Javascript-Calculator",
-      mainImg: mc2,
-      url: "/work/vanilla-js-calculator",
-      secondaryImg: mc2,
+      title: "React-Weather-App",
+      mainImg: weather,
+      url: "/work/react-weather-app",
+      secondaryImg: bmi3,
       projectdetail: [
         {
-          title: "What it's made of:",
+          title: "What its made of:",
           description:
-            "A very modern Calculator with a nice looking UI.Made with Javascript,Html and CSS.Click link below to launch the App",
-            link: 'https://modernjscalculator.netlify.app/',
+            `A Weather app. Made up using React and implements the API Fetching. Click the link below to view launch the app`,
+          link: 'https://weatherappclint.netlify.app/',
         }
       ],
     },
     {
+      title: "Ignite-Games-App",
+      mainImg: ignite2,
+      url: "/work/Ignite-Games-app",
+      secondaryImg: ignite,
+      projectdetail: [
+        {
+          title: "What its made of:",
+          description:
+            `A Games App.Users can be able to view games' ratings,descriptions,release dates ,reviews,the platforms supporting the games and also users can search their desired games.
+            . Made up using React and implements the API Fetching. 
+              Click the link below to view launch the app`,
+          link: 'https://ignite-games-app.netlify.app/',
+        }
+      ],
+    },
+       {
       title: "Javascript-BMI-Calculator",
       mainImg: bmi2,
       url: "/work/js-bmi-calculator",
@@ -53,16 +71,16 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "React-Weather-App",
-      mainImg: weather,
-      url: "/work/react-weather-app",
-      secondaryImg: bmi3,
+      title: "Vanilla-Javascript-Calculator",
+      mainImg: mc2,
+      url: "/work/vanilla-js-calculator",
+      secondaryImg: mc2,
       projectdetail: [
         {
-          title: "What its made of:",
+          title: "What it's made of:",
           description:
-            `A Weather app. Made up using React and implements the API Fetching. Click the link below to view launch the app`,
-          link: 'https://weatherappclint.netlify.app/',
+            "A very modern Calculator with a nice looking UI.Made with Javascript,Html and CSS.Click link below to launch the App",
+            link: 'https://modernjscalculator.netlify.app/',
         }
       ],
     },

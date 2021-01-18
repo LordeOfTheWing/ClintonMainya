@@ -9,6 +9,7 @@ import wm1 from '../img/wm1.png';
 import mci1 from '../img/mc1.png';
 import bmi1 from '../img/bmi1.png';
 import weather from '../img/weather.png';
+import ignite from '../img/ignite.png';
 //Animations
 import {motion} from 'framer-motion';
 import {sliderContainer ,slider,pageAnimation,fade, photoAnim ,lineAnim} from '../animation';
@@ -49,6 +50,13 @@ const MyWork = ()=> {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/react-weather-app">
                     <img src={weather} alt=""/>
+                </Link>
+            </Movie>
+             <Movie >
+                <h2>Ignite-Games-App</h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to="/work/Ignite-Games-app">
+                    <img src={ignite} alt=""/>
                 </Link>
             </Movie>
              <Movie >
